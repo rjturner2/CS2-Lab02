@@ -8,12 +8,17 @@ public class Birthdays {
 		
 	}
 
-	public static String getUserBirthday() {
+	public static String[] getUserBirthday() {
+		String[] userBirthMonthAndDay = new String[2];
+
 		Scanner console = new Scanner(System.in);
 		System.out.print("What month were you born in?: ");
-		String userOneMonth = console.next();
+		userBirthMonthAndDay[0] = console.next();
 
-		return "Null";
+		System.out.print("What day were you born on?: ");
+		userBirthMonthAndDay[1] = console.next();
+
+		return userBirthMonthAndDay;
 	}
 
 	public static int getMonthInteger(String month) {
@@ -22,7 +27,7 @@ public class Birthdays {
 			return 28;
 		case "September", "April", "June", "November":
 			return 30;
-		case "January", "March", "May", "July", "August", "December":
+		case "January", "March", "May", "July", "August", "December", "October":
 			return 31;
 		default:
 			return 0;
