@@ -22,7 +22,7 @@ public class Birthdays {
 			return 28;
 		case "September", "April", "June", "November":
 			return 30;
-		case "January", "March", "May", "July", "August", "December":
+		case "January", "March", "May", "July", "August", "December", "October":
 			return 31;
 		default:
 			return 0;
