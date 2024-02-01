@@ -1,6 +1,6 @@
 public class digitRange {
 	public static void main(String[] args) {
-		System.out.println(digitRange(83));
+		System.out.println(digitRange(7164));
 	}
 
 	public static int digitRange(int n) {
